@@ -108,28 +108,22 @@ class MatrixNew {
 public class Aufgabe4Matrix {
 
 	public static void main(String[] args) {
-		MatrixNew matrix = new MatrixNew(2,500);
+		MatrixNew matrix = new MatrixNew(500,500);
 		matrix.init();
 		// matrix.print();
 		// matrix.input();
 		// matrix.print();
 		matrix.randomFill();
-		//matrix.print();
+		// matrix.print();
 		
 		MatrixNew matrix2 = new MatrixNew(500,500);
 		matrix2.init();
 		matrix2.randomFill();
-	//	matrix2.print();
+		// matrix2.print();
 		
-	//	Calendar calendar = Calendar.getInstance();
-		
-	//	long startTime = calendar.getTimeInMillis();
 		matrix.add(matrix2);
-	//	Calendar calendar2 = Calendar.getInstance();
-	//	long endTime = calendar2.getTimeInMillis();
-	//	System.out.println("Time: " + (endTime - startTime));
-		
-	//	matrix.mult(matrix2);
+
+		matrix.mult(matrix2);
 	}
 
 }

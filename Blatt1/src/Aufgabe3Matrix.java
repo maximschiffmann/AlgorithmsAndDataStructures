@@ -96,9 +96,9 @@ public class Aufgabe3Matrix {
 	public static void main(String[] args) {
 		Matrix matrix = new Matrix(2,2);
 		matrix.init();
-		// matrix.print();
-		// matrix.input();
-		// matrix.print();
+		matrix.print();
+		matrix.input();
+		matrix.print();
 		matrix.randomFill();
 		matrix.print();
 		
