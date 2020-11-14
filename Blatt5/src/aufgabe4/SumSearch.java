@@ -45,7 +45,7 @@ public class SumSearch {
 		int first = 0;
 		int last = a.length - 1;
 
-		for (int i = 0; i < a.length; i++) {
+		while (first != last) {
 			int temp = a[first] + a[last];
 			if (temp == sum) {
 				return true;
