@@ -15,7 +15,7 @@ public class Programm {
 		SelectionSort sSorter = new SelectionSort(arr3);
 		// sSorter.sort();
 		
-		int[] arr4 = { 34,45,12,34,23,18,38,17,43,7 };
+		int[] arr4 = { 34, 45, 12, 34, 23, 18, 38, 17, 43, 7 };
 		Quicksort qSorter = new Quicksort();
 		qSorter.sort(arr4, 0, arr4.length-1);
 	}
