@@ -50,6 +50,7 @@ public class Searchtree {
 
 	public void deleteTree() {
 		deleteTree(root);
+		root = null;
 	}
 
 	public void insert(int o) {
@@ -120,7 +121,7 @@ public class Searchtree {
 	}
 
 	private Leaf findSmallestValue(Leaf root) {
-		return root.getLeft() == null ? root : findSmallestValue(root.getRight());
+		return root.getLeft() == null ? root : findSmallestValue(root.getLeft());
 	}
 
 	public int getValue(Object o) {
