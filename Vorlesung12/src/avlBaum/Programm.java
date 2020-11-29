@@ -9,7 +9,8 @@ public class Programm {
 		for (int i = 0; i < a.length; i++) {
 			tree.insert(a[i]);
 		}
-		
+		tree.delete(6);
+		tree.delete(7);
 		tree.print();
 	}
 

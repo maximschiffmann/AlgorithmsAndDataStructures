@@ -1,4 +1,4 @@
-package avlBaum;
+package aufgabe3;
 
 public class AvlBaum {
 
