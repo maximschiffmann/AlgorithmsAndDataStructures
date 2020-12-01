@@ -4,7 +4,7 @@ public class Programm {
 
 	public static void main(String[] args) {
 		Searchtree tree = new Searchtree();
-		int[] a = { 8,5,7,6,9,11,10,12 };
+		int[] a = { 8, 5, 7, 6, 9, 11, 10, 12 };
 
 		for (int i = 0; i < a.length; i++) {
 			tree.insert(a[i]);
