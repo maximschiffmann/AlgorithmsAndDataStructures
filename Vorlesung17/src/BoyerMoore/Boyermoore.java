@@ -11,10 +11,11 @@ public class Boyermoore {
 		for (i = 0; i < m; i++) {
 			shift[getIndex(muster.charAt(i))] = m - i - 1;
 		}
-
+//aaa
+//bbb
 		int count = 0;
 		j = i = m - 1;
-
+// j = i = 2, n = 15
 		while (i < n) {
 			if (text.charAt(i) == muster.charAt(j)) {
 				if (j == 0) {
@@ -29,6 +30,7 @@ public class Boyermoore {
 				if (m - j > shift[getIndex(text.charAt(i))]) {
 					i = i + m - j;
 				} else {
+					System.out.println(shift[getIndex(text.charAt(i))]);
 					i = i + shift[getIndex(text.charAt(i))];
 				}
 				j = m - 1;
