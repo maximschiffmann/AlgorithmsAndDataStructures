@@ -16,6 +16,14 @@ public class FloydWarshall {
 
 		for (int k = 0; k < n; k++) {
 			int round = k + 1;
+			int[][]predCopy = new int[n][n];
+			
+			for(int i=0; i<n; i++) {
+				  for(int j=0; j<n; j++) {
+					  predCopy[i][j]=pred[i][j];
+				  }
+			}
+			
 			for (int i = 0; i < n; i++) {
 				for (int j = 0; j < n; j++) {
 					if (i == k && j == k) {
@@ -24,10 +32,16 @@ public class FloydWarshall {
 						continue;
 					} else if (matrix[i][j] > matrix[i][k] + matrix[k][j]) {
 						matrix[i][j] = matrix[i][k] + matrix[k][j];
-						pred[i][j] = round;
+						
+						if(pred[k][j] == -1) {
+							predCopy[i][j] = round;
+						} else {
+							predCopy[i][j] = pred[k][j]; 
+						}
 					}
 				}
 			}
+			pred = predCopy;
 			System.out.println("k: " + round);
 			printMatrix();
 			System.out.println("pre: " + round);
