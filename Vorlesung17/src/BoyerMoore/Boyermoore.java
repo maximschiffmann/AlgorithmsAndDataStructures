@@ -12,9 +12,11 @@ public class Boyermoore {
 		for (i = 0; i < m; i++) {
 			shift[getIndex(muster.charAt(i))] = m - i - 1;
 		}
-
-		for (int c = 0; c < shift.length; c++) {
-			System.out.println(c + ": " + shift[c]);
+		char ch;
+		int c = 0;
+		for (ch  = 'a'; ch <= 'z'; ch ++) {
+			System.out.println(c + ": "+ ch +" " + shift[c]);
+			c++;
 		}
 
 		System.out.println(text);

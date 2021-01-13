@@ -3,6 +3,7 @@ package heap;
 public class HeapSort {
 	public void hespSort(int[] a, int first, int last) {
 		buildHeap(a, first, last);
+		this.print(a);
 		System.out.println("START");
 		for (int i = last; i > first; i--) {
 			int temp = a[first];

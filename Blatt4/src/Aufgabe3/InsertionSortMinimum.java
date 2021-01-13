@@ -13,6 +13,7 @@ public class InsertionSortMinimum {
 				i++;
 			}
 			a[i - 1] = key;
+			print(a);
 		}
 
 	}

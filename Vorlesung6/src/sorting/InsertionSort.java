@@ -12,11 +12,11 @@ public class InsertionSort {
 		int i;
 		int j;
 		int key;
-
+		this.print();
 		for (j = 1; j < this.arr.length; j++) {
 			key = this.arr[j];
 			i = j - 1;
-			while (i >= 0 && this.arr[i] < key) {
+			while (i >= 0 && this.arr[i] > key) {
 				this.arr[i + 1] = this.arr[i];
 				i--;
 			}

@@ -10,7 +10,6 @@ public class SelectionSort {
 	public void sort() {
 		int min;
 		for (int i = 0; i < this.arr.length; i++) {
-			this.print();
 			min = i;
 			for (int j = i; j < this.arr.length; j++) {
 				if (this.arr[j] < this.arr[min])
@@ -19,6 +18,7 @@ public class SelectionSort {
 			int temp = this.arr[i];
 			this.arr[i] = this.arr[min];
 			this.arr[min] = temp;
+			this.print();
 		}
 	}
 
