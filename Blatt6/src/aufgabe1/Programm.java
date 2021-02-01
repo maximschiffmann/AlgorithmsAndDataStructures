@@ -5,8 +5,8 @@ public class Programm {
 	public static void main(String[] args) {
 		int[] a = { 4, 9, 2, 4, 7, 6, 0, 12 };
 		CountSort cSort = new CountSort();
-		cSort.sortNew(a);
 		cSort.print(a);
+		cSort.sortNew(a);
 
 		HeapSort hSort = new HeapSort();
 		// hSort.sort(a, 0, a.length - 1);

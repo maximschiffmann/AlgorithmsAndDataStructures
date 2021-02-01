@@ -3,6 +3,7 @@ package mapsort;
 public class MapSort {
 	public void sort(int[] a, int n, double c) {
 		int newn = (int) ((double) n * c);
+		System.out.println(newn);
 		int i;
 		int j = 0;
 		int[] bin = new int[newn];

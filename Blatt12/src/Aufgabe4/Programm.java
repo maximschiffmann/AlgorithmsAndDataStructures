@@ -30,8 +30,24 @@ public class Programm {
 				{ -1, 3, -1, -1, -1 },
 				{ 4, -1, 4, -1, -1 }, 
 				{ -1, -1, -1, 5, -1} };
+		
+		int[][] matrix3 = { 
+				{ 0, 6, inf, 8,-1, inf}, 
+				{ -2, 0, inf,2, -3, inf }, 
+				{ 0, 2, 0, 4, -1, -8 },
+				{ -4, 2, inf,0, -5, inf }, 
+				{ 3, 7, inf, 9, 0, inf},
+				{ 3, 5, 10, 7, 2, 0 } };
+		
+		int[][] pred3 = { 
+				{ -1, 5, -1, 2, 1, -1 }, 
+				{ 4, -1, -1, 2, 1, -1}, 
+				{ 4, 3, -1, 2, 1, 3 },
+				{ 4, 5, -1, -1, 1, -1 }, 
+				{ 4, 5, -1, 2, -1, -1},
+				{ 4, 6, 6, 2, 1, -1} };
 
-		FloydWarshall floyd = new FloydWarshall(matrix, pred);
+		FloydWarshall floyd = new FloydWarshall(matrix3, pred3);
 		floyd.calculate();
 
 	}

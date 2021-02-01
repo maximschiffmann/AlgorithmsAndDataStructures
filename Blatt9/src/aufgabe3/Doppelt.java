@@ -23,8 +23,8 @@ public class Doppelt {
 				found = true;
 				break;
 			} else {
-				position = (hs + i * hs2) % this.m;
 				i++;
+				position = (hs + i * hs2) % this.m;
 			}
 		}
 	}

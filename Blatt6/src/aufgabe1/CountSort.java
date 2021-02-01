@@ -49,10 +49,14 @@ public class CountSort {
 		for (int i = 0; i < a.length; i++) {
 			anew[a[i] - minimum]++;
 		}
+		print(anew);
 
 		for (int i = 1; i < length; i++) {
 			anew[i] = anew[i] + anew[i - 1];
 		}
+		print(anew);
+		
+		System.out.println("test " + (a[0]-minimum - 1));
 
 		for (int i = 0; i < a.length; i++) {
 			ret[anew[a[i] - minimum] - 1] = a[i];

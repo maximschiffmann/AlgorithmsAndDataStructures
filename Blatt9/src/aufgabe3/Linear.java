@@ -1,4 +1,4 @@
-package aufgabe3;
+  package aufgabe3;
 
 public class Linear {
 

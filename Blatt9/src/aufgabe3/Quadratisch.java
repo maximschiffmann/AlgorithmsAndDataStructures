@@ -27,8 +27,9 @@ public class Quadratisch {
 				found = true;
 				break;
 			} else {
-				position = (hs + this.c1 * i + this.c2 * i * i) % this.m;
 				i++;
+				position = (hs + this.c1 * i + this.c2 * i * i) % this.m;
+				// System.out.println("num: " + num + " pos: " + position);
 			}
 		}
 	}
